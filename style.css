@@ -7,7 +7,7 @@
 
 body {
   background: #000; /* fundo preto */
-  color: #fff; /* letras brancas */
+  color: #fff;
   line-height: 1.6;
 }
 
@@ -20,7 +20,6 @@ header {
 
 header h1 {
   font-size: 2.5rem;
-  margin-bottom: 10px;
 }
 
 header p {
@@ -43,19 +42,14 @@ nav a:hover {
   color: #facc15;
 }
 
-/* CONTAINER PRINCIPAL */
+/* CONTAINER */
 .container {
   width: 90%;
   max-width: 1000px;
   margin: 40px auto;
 }
 
-/* SEÇÕES */
-section {
-  margin-bottom: 60px;
-}
-
-/* TÍTULOS */
+/* TÍTULOS SEÇÃO */
 h2 {
   text-align: center;
   margin-bottom: 20px;
@@ -67,7 +61,7 @@ h2 {
 .sobre-box {
   background: #111;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 12px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -81,6 +75,8 @@ h2 {
 .sobre-box .fotos {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .sobre-box .fotos img {
@@ -91,18 +87,25 @@ h2 {
 /* SKILLS */
 .skills-grid {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
 }
 
 .skill-box {
-  flex: 1;
-  min-width: 250px;
   background: #111;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 25px 20px;
+  border-radius: 12px;
   text-align: center;
+  min-width: 220px;
+  flex: 1;
+  max-width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(255, 77, 109, 0.6);
 }
 
 .skill-box h3 {
@@ -116,6 +119,7 @@ h2 {
 
 .skill-box li {
   margin: 8px 0;
+  font-size: 1.1rem;
 }
 
 /* PROJETOS */
@@ -128,13 +132,13 @@ h2 {
 .card {
   background: #111;
   padding: 20px;
-  border-radius: 10px;
-  transition: 0.3s;
-  color: white;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(255, 77, 109, 0.7);
 }
 
 .card h3 {
@@ -142,19 +146,10 @@ h2 {
   color: #ff4d6d;
 }
 
-.card a {
-  display: inline-block;
+.card video {
+  width: 100%;
+  border-radius: 8px;
   margin-top: 10px;
-  padding: 8px 12px;
-  background: #8b0000;
-  color: white;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.card a:hover {
-  background: #ff4d6d;
 }
 
 /* CONTATO */
