@@ -7,14 +7,14 @@
 }
 
 body {
-  background: #000;
+  background: #000; /* fundo preto */
   color: #fff;
   line-height: 1.6;
 }
 
 /* HEADER */
 header {
-  background: linear-gradient(135deg, #B22222, #800020);
+  background: linear-gradient(135deg, #B22222, #800020); /* vermelho sangue → vinho */
   text-align: center;
   padding: 50px 20px;
 }
@@ -71,26 +71,36 @@ h2 {
 
 .sobre-box .texto {
   text-align: center;
+  font-size: 1.1rem;
 }
 
-/* ÁREA DE FOTOS EM QUADRADOS */
+/* FOTOS EM QUADRADOS SEPARADOS */
+#fotos {
+  margin: 40px 0;
+}
+
 .fotos-grid {
   display: flex;
   gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 15px;
 }
 
 .foto-box {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   background: #111;
   border-radius: 12px;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.foto-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(255, 77, 109, 0.6);
 }
 
 .foto-box img {
@@ -102,7 +112,7 @@ h2 {
 /* SKILLS */
 .skills-grid {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start; /* alinha à esquerda */
   gap: 20px;
   flex-wrap: wrap;
 }
