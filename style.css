@@ -6,26 +6,29 @@
 }
 
 body {
-  background: #000000; /* preto no fundo */
-  color: #ffffff; /* letras em branco */
+  background: #000000; /* fundo preto */
+  color: #ffffff; /* letras brancas */
   line-height: 1.6;
 }
 
 header {
   background: linear-gradient(135deg, #800020, #8b0000); 
-  /* #800020 = bordô | #8b0000 = vinho */
+  /* bordô → vinho */
   color: white;
   text-align: center;
   padding: 50px 20px;
+  box-shadow: 0 0 25px rgba(139, 0, 0, 0.8);
 }
 
 header h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
+  text-shadow: 0 0 10px #ff4d6d, 0 0 20px #ff4d6d, 0 0 30px #ff1a4c;
 }
 
 header p {
   font-size: 1.2rem;
+  text-shadow: 0 0 8px #facc15, 0 0 15px #facc15;
 }
 
 nav {
@@ -34,14 +37,16 @@ nav {
 
 nav a {
   margin: 0 10px;
-  color: white; /* links brancos */
+  color: white;
   text-decoration: none;
   font-weight: bold;
   transition: 0.3s;
+  text-shadow: 0 0 5px #ff4d6d, 0 0 10px #ff4d6d;
 }
 
 nav a:hover {
-  color: #facc15; /* amarelo dourado no hover */
+  color: #facc15;
+  text-shadow: 0 0 10px #facc15, 0 0 20px #facc15;
 }
 
 .container {
@@ -58,12 +63,14 @@ h2 {
   text-align: center;
   margin-bottom: 20px;
   font-size: 2rem;
-  color: #ff4d6d; /* destaque rosado (opcional) */
+  color: #ff4d6d;
+  text-shadow: 0 0 10px #ff4d6d, 0 0 20px #ff1a4c;
 }
 
 .sobre {
   text-align: center;
   font-size: 1.1rem;
+  text-shadow: 0 0 6px rgba(255,255,255,0.6);
 }
 
 .projetos {
@@ -73,28 +80,32 @@ h2 {
 }
 
 .card {
-  background: #1a1a1a; /* fundo dos cards preto suave */
+  background: #111;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+  box-shadow: 0 0 15px rgba(255, 77, 109, 0.4);
   transition: 0.3s;
-  color: white; /* texto dentro dos cards branco */
+  color: white;
 }
 
 .card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(255, 77, 109, 0.7);
 }
 
 .card h3 {
   margin-bottom: 10px;
-  color: #ff4d6d; /* título dos cards em rosa/avermelhado */
+  color: #ff4d6d;
+  text-shadow: 0 0 10px #ff1a4c, 0 0 20px #ff4d6d;
 }
 
 footer {
-  background: #8b0000; /* rodapé vinho */
+  background: #8b0000;
   color: white;
   text-align: center;
   padding: 20px;
+  text-shadow: 0 0 8px #ffffff, 0 0 15px #ff4d6d;
+  box-shadow: 0 -2px 15px rgba(139, 0, 0, 0.8);
 }
 
 .social a {
@@ -102,8 +113,10 @@ footer {
   color: white;
   font-size: 1.4rem;
   transition: 0.3s;
+  text-shadow: 0 0 8px #ffffff, 0 0 15px #ff4d6d;
 }
 
 .social a:hover {
   color: #facc15;
+  text-shadow: 0 0 15px #facc15, 0 0 25px #ff4d6d;
 }
