@@ -89,7 +89,7 @@ h2 {
   width: 200px;                /* tamanho maior */
   height: 200px;
   background: #111;
-  border: 3px solid #ff4d6d;   /* contorno vermelho */
+  border: 3px solid #800020;   /* contorno vermelho */
   border-radius: 12px;
   overflow: hidden;
   display: flex;
