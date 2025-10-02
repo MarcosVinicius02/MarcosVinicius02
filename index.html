@@ -1,60 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Isabelly Bohn</title>
-  <link rel="stylesheet" href="style.css"> <!-- Arquivo CSS separado -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfólio — Isabelly Kayllani Bohn</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Isabelly Bohn</h1>
-    <p>Desenvolvedor Front-End | Criador de Projetos</p>
+    <h1>Isabelly Kayllani Bohn</h1>
+    <p>Técnica em Análise e Desenvolvimento de Sistemas | Foco em liderança e gestão de projetos</p>
     <nav>
       <a href="#sobre">Sobre</a>
       <a href="#projetos">Projetos</a>
+      <a href="#skills">Skills</a>
       <a href="#contato">Contato</a>
     </nav>
   </header>
 
   <div class="container">
+    <!-- SOBRE -->
     <section id="sobre">
       <h2>Sobre Mim</h2>
-      <p class="sobre">Olá! Sou um desenvolvedor apaixonado por tecnologia e programação. 
-      Este portfólio reúne alguns dos meus principais projetos e experiências.</p>
+      <p class="sobre">
+        Meu nome é <strong>Isabelly Kayllani Bohn</strong>, nasci em <strong>04/04/2008</strong> e sou
+        técnica em <strong>Análise e Desenvolvimento de Sistemas</strong>. Atuo como professora auxiliar
+        voluntária na Colônia do Clube Bosch, onde auxilio no ensino e na organização de atividades.
+        Tenho foco em <em>liderança</em> e <em>gestão de projetos</em> — gosto de trabalhar com pessoas,
+        coordenar tarefas e transformar ideias em entregas reais. Sempre disposta a aprender, busco
+        aprimorar tanto habilidades técnicas quanto competências interpessoais para contribuir com
+        equipes e projetos.
+      </p>
     </section>
 
+    <!-- PROJETOS -->
     <section id="projetos">
       <h2>Projetos</h2>
       <div class="projetos">
+        <!-- Projeto 1 -->
         <div class="card">
-          <h3>Projeto 1</h3>
-          <p>Descrição breve do projeto. O que foi feito, tecnologias usadas e objetivo.</p>
+          <h3>Corrida de LEDs</h3>
+          <!-- substitua src pelo caminho do seu vídeo (.mp4) ou um link embed -->
+          <video controls width="100%" preload="metadata">
+            <source src="videos/corrida-leds.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo. Coloque um link ou arquivo .mp4.
+          </video>
+          <p>Projeto executado para a Feira de Profissões da escola. Desenvolvemos um circuito com
+             LEDs programados para criar efeitos de corrida sincronizados — objetivo: demonstrar
+             conceitos de eletrônica básica e programação de microcontroladores.</p>
         </div>
+
+        <!-- Projeto 2 -->
         <div class="card">
-          <h3>Projeto 2</h3>
-          <p>Descrição breve do projeto. O que foi feito, tecnologias usadas e objetivo.</p>
-        </div>
-        <div class="card">
-          <h3>Projeto 3</h3>
-          <p>Descrição breve do projeto. O que foi feito, tecnologias usadas e objetivo.</p>
+          <h3>Aranha Robô (Hexápode)</h3>
+          <video controls width="100%" preload="metadata">
+            <source src="videos/aranha-robo.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo. Coloque um link ou arquivo .mp4.
+          </video>
+          <p>Hexápode projetado e montado para atividades de robótica: estrutura impressa em 3D,
+             controle via ESP32 e programação de movimentos. O projeto teve foco em mecânica,
+             eletrônica e lógica de controle para caminhada/quebra de obstáculos.</p>
         </div>
       </div>
     </section>
 
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2>Hard & Soft Skills</h2>
+
+      <div style="display:grid; grid-template-columns: 1fr 1fr; gap:16px;">
+        <!-- Hard Skills -->
+        <div class="card">
+          <h3>Hard Skills</h3>
+          <ul>
+            <li>Programação: JavaScript, Python (básico)</li>
+            <li>Desenvolvimento Web: HTML5, CSS3, conceitos de responsive</li>
+            <li>Bancos de dados: conceitos de modelagem e SQL (noções)</li>
+            <li>Microcontroladores: ESP32 (projetos com LEDs e robótica)</li>
+            <li>Ferramentas: Git, editor VSCode, impressão 3D (noções)</li>
+          </ul>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="card">
+          <h3>Soft Skills</h3>
+          <ul>
+            <li>Liderança e coordenação de pequenas equipes</li>
+            <li>Comunicação clara (ensino/voluntariado)</li>
+            <li>Trabalho em equipe e empatia</li>
+            <li>Organização e gestão de tempo em projetos</li>
+            <li>Curiosidade e vontade constante de aprender</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
     <section id="contato">
       <h2>Contato</h2>
-      <p class="sobre">Entre em contato comigo pelas redes sociais abaixo:</p>
+      <p class="sobre">Quer ver mais projetos ou conversar sobre oportunidades? Me ache no GitHub ou LinkedIn.</p>
       <div class="social">
-        <a href="https://github.com/" target="_blank">🐙 GitHub</a>
-        <a href="https://linkedin.com/" target="_blank">💼 LinkedIn</a>
-        <a href="mailto:seuemail@email.com">✉️ Email</a>
-      </div>
-    </section>
-  </div>
-
-  <footer>
-    <p>&copy; 2025 - Seu Nome | Todos os direitos reservados</p>
-  </footer>
-</body>
-</html>
+        <a href="https://github.com/" target="_blank">🐙 GitHub</
