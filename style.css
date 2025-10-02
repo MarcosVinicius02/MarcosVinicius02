@@ -87,6 +87,33 @@ h2 {
   border-radius: 12px;  /* cantos arredondados */
 }
 
+/* ÁREA DE FOTOS EM QUADRADOS */
+.fotos-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+/*fotos*/
+.foto-box {
+  width: 150px;
+  height: 150px;
+  background: #111;
+  border-radius: 12px;
+  overflow: hidden; /* garante que a imagem não vaze do quadrado */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.foto-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* mantém proporção e corta se necessário */
+}
+
+
 /* SKILLS */
 .skills-grid {
   display: flex;
