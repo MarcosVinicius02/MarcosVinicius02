@@ -13,7 +13,7 @@ body {
 
 /* HEADER */
 header {
-  background: linear-gradient(135deg, #8B0000, #800020); /* vermelho sangue → vinho */
+  background: linear-gradient(135deg, #ff4d6d, #800020); 
   text-align: center;
   padding: 50px 20px;
 }
@@ -54,7 +54,7 @@ h2 {
   text-align: center;
   margin-bottom: 20px;
   font-size: 2rem;
-  color: #ff4d6d;
+  color: #800020;
 }
 
 /* SOBRE MIM */
@@ -110,7 +110,7 @@ h2 {
 
 .skill-box h3 {
   margin-bottom: 15px;
-  color: #ff4d6d;
+  color: #800020;
 }
 
 .skill-box ul {
