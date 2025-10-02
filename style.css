@@ -13,10 +13,11 @@ body {
 
 /* HEADER */
 header {
-  background: linear-gradient(135deg, #ff4d6d, #800020); 
+  background: linear-gradient(135deg, #B22222, #800020); 
   text-align: center;
   padding: 50px 20px;
 }
+
 
 header h1 {
   font-size: 2.5rem;
@@ -85,42 +86,27 @@ h2 {
 }
 
 /* SKILLS */
-.skills-grid {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
 .skill-box {
   background: #111;
   padding: 25px 20px;
   border-radius: 12px;
-  text-align: center;
+  text-align: left; /* alinhamento à esquerda */
   min-width: 220px;
   flex: 1;
   max-width: 300px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.skill-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 20px rgba(255, 77, 109, 0.6);
-}
-
-.skill-box h3 {
-  margin-bottom: 15px;
-  color: #800020;
-}
-
 .skill-box ul {
-  list-style: none;
+  list-style: disc inside; /* coloca os bullets à esquerda */
+  padding-left: 0;
 }
 
 .skill-box li {
-  margin: 8px 0;
+  margin: 6px 0; /* mais compacto */
   font-size: 1.1rem;
 }
+
 
 /* PROJETOS */
 .projetos {
